@@ -1,15 +1,27 @@
-.App {
-  text-align: center;
+body {
+  background-color: hsl(220, 13%, 18%);
+  min-height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.calculator {
+  
+  display: grid;  
+  grid-auto-rows: minmax(50px, auto);
+  gap: 5px; /* Gap between grid items */
+  max-width: 300px; /* Maximum width of the calculator */
+  margin: 5rem auto; /* Center the calculator horizontally */
+}
 
-  /* justify-content: center; */
-  font-size: calc(10px + 2vmin);
-  color: white;
+.button-row {
+  display: flex;
+  justify-content: space-between; /* Space out buttons evenly */
+}
+
+button {
+  width: 100%; /* Button width set to 100% of parent's width */
+}
+
+.display {
+  background-color: white;
+  text-align: right;
 }
