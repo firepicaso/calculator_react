@@ -27,8 +27,8 @@ const Calculator = () => (
     </div>
     <div className="button-row bottom-row">
       <button type="button">0</button>
-      <button type="button">.</button>
-      <button type="button">=</button>
+      <button className="narrow" type="button">.</button>
+      <button className="narrow" type="button">=</button>
     </div>
   </div>
 );

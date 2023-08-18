@@ -3,12 +3,10 @@ body {
   min-height: 100vh;
 }
 
-.calculator {
-  
+.calculator {  
   display: grid;  
-  grid-auto-rows: minmax(50px, auto);
-  gap: 5px; /* Gap between grid items */
-  max-width: 300px; /* Maximum width of the calculator */
+  grid-auto-rows: minmax(50px, 10px);
+  max-width: 200px;
   margin: 5rem auto; /* Center the calculator horizontally */
 }
 
@@ -17,11 +15,24 @@ body {
   justify-content: space-between; /* Space out buttons evenly */
 }
 
+.button-row :last-child {
+  background-color: rgb(253, 155, 36);
+}
+
 button {
-  width: 100%; /* Button width set to 100% of parent's width */
+  width: 100%;
+  border: 1px solid rgb(139, 139, 139);
+  font-size: 18px;
 }
 
 .display {
-  background-color: white;
+  background-color: #ababab;
+  font-size: 22px;
+  padding: 0.5rem 0.5rem;
+  color: white;
   text-align: right;
+}
+
+.narrow {
+  width: 140px;
 }
