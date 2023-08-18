@@ -5,6 +5,7 @@ body {
 
 .calculator {
   display: grid;
+
   /* grid-auto-rows: minmax(50px, 10px); */
   max-width: 50px;
   margin: 5rem auto;
