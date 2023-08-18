@@ -1,15 +1,38 @@
-.App {
-  text-align: center;
+body {
+  background-color: hsl(220, 13%, 18%);
+  min-height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.calculator {
+  display: grid;
+  max-width: 300px;
+  margin: 5rem auto;
+}
 
-  /* justify-content: center; */
-  font-size: calc(10px + 2vmin);
+.button-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-row :last-child {
+  background-color: rgb(253, 155, 36);
+}
+
+button {
+  width: 100%;
+  border: 1px solid rgb(195, 195, 195);
+  font-size: 18px;
+  padding: 1rem;
+}
+
+.display {
+  background-color: #8f8f8f;
+  font-size: 22px;
+  padding: 0.5rem 0.5rem;
   color: white;
+  text-align: right;
+}
+
+.narrow {
+  width: 140px;
 }
