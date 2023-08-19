@@ -1,16 +1,16 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 
-function CalculatorButtons(label, onClick) {
-    return (
-        <button type="button" onClick={onClick}>
-            {label}
-        </button>      
-    );
+function CalculatorButtons(label) {
+  return (
+    <button type="button">
+      {label}
+    </button>
+  );
 }
 
 CalculatorButtons.propTypes = {
-    label: PropTypes.string.isRequired,
-    onClick: PropTypes.func,
+  label: PropTypes.string.isRequired,
 };
 
 export default CalculatorButtons;
