@@ -1,43 +1,47 @@
+import React, { useState } from 'react';
+import CalculatorButtons from './CalculatorButtons';
+import calculate from '../logic/calculate';
+import '../App.css';
+
 function Calculator() {
+  const [calculation, setCalculation] = useState({});
+
+  const clickButtons = (label) => {
+    const newCalculation = calculate(calculation, label);
+    setCalculation(newCalculation);
+  };
+
   return (
     <div className="calculator">
-      <div className="display">0</div>
-      <CalculatorButtons />
-    </div>
-  );
-}
-
-function CalculatorButtons() {
-  return (
-    <div className="button-container">
+      <div className="display">{calculation.next || calculation.total || '0'}</div>
       <div className="button-row">
-        <button type="button">AC</button>
-        <button type="button">+/-</button>
-        <button type="button">%</button>
-        <button type="button">÷</button>
+        <CalculatorButtons label="AC" onClick={() => clickButtons('AC')} />
+        <CalculatorButtons label="+/-" onClick={() => clickButtons('+/-')} />
+        <CalculatorButtons label="%" onClick={() => clickButtons('%')} />
+        <CalculatorButtons label="÷" onClick={() => clickButtons('÷')} />
       </div>
       <div className="button-row">
-        <button type="button">7</button>
-        <button type="button">8</button>
-        <button type="button">9</button>
-        <button type="button">x</button>
+        <CalculatorButtons label="7" onClick={() => clickButtons('7')} />
+        <CalculatorButtons label="8" onClick={() => clickButtons('8')} />
+        <CalculatorButtons label="9" onClick={() => clickButtons('9')} />
+        <CalculatorButtons label="x" onClick={() => clickButtons('x')} />
       </div>
       <div className="button-row">
-        <button type="button">4</button>
-        <button type="button">5</button>
-        <button type="button">6</button>
-        <button type="button">-</button>
+        <CalculatorButtons label="4" onClick={() => clickButtons('4')} />
+        <CalculatorButtons label="5" onClick={() => clickButtons('5')} />
+        <CalculatorButtons label="6" onClick={() => clickButtons('6')} />
+        <CalculatorButtons label="-" onClick={() => clickButtons('-')} />
       </div>
       <div className="button-row">
-        <button type="button">1</button>
-        <button type="button">2</button>
-        <button type="button">3</button>
-        <button type="button">+</button>
+        <CalculatorButtons label="1" onClick={() => clickButtons('1')} />
+        <CalculatorButtons label="2" onClick={() => clickButtons('2')} />
+        <CalculatorButtons label="3" onClick={() => clickButtons('3')} />
+        <CalculatorButtons label="+" onClick={() => clickButtons('+')} />
       </div>
       <div className="button-row bottom-row">
-        <button type="button">0</button>
-        <button className="narrow" type="button">.</button>
-        <button className="narrow" type="button">=</button>
+        <CalculatorButtons label="0" onClick={() => clickButtons('0')} />
+        <CalculatorButtons label="." type="narrow" onClick={() => clickButtons('.')} />
+        <CalculatorButtons label="=" type="narrow" onClick={() => clickButtons('=')} />
       </div>
     </div>
   );
