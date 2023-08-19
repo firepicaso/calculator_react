@@ -1,12 +1,39 @@
 body {
-  background-color: hsl(220, 13%, 18%);
+  background-color: hsl(0, 0%, 93%);
   min-height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 3rem;
+  width: 20rem;
+}
+
+.quote-container p {
+  font-style: italic;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(64, 111, 154);
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(58, 58, 58);
+  text-align: right;
 }
 
 .calculator {
   display: grid;
   max-width: 300px;
-  margin: 5rem auto;
+  margin: 5rem 1rem;
 }
 
 .button-row {
@@ -27,11 +54,13 @@ button {
 }
 
 .display {
+  display: flex;
+  align-items: center;
+  justify-content: end;
   background-color: #8f8f8f;
   font-size: 22px;
   padding: 0.5rem 0.5rem;
   color: white;
-  text-align: right;
 }
 
 .narrow {
