@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CalculatorButtons from './CalculatorButtons';
 import calculate from '../logic/calculate';
+import '../App.css';
 
 function Calculator() {
   const [calculation, setCalculation] = useState({});
@@ -39,8 +40,8 @@ function Calculator() {
       </div>
       <div className="button-row bottom-row">
         <CalculatorButtons label="0" onClick={() => clickButtons('0')} />
-        <CalculatorButtons label="." className="narrow" onClick={() => clickButtons('.')} />
-        <CalculatorButtons label="=" className="narrow" onClick={() => clickButtons('=')} />
+        <CalculatorButtons label="." type="narrow" onClick={() => clickButtons('.')} />
+        <CalculatorButtons label="=" type="narrow" onClick={() => clickButtons('=')} />
       </div>
     </div>
   );
