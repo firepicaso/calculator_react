@@ -1,17 +1,18 @@
-// import calculate from '../logic/calculate';
+import React, { useState } from 'react';
+import CalculatorButtons from './CalculatorButtons';
+import calculate from '../logic/calculate';
 
 function Calculator() {
+  const [calculation, setCalculation] = useState({});
+
+  const clickButtons = (label) => {
+    const newCalculation = calculate(calculation, label);
+    setCalculation(newCalculation);
+  };
+
   return (
     <div className="calculator">
       <div className="display">0</div>
-      <CalculatorButtons />
-    </div>
-  );
-}
-
-function CalculatorButtons() {
-  return (
-    <div className="button-container">
       <div className="button-row">
         <button type="button">AC</button>
         <button type="button">+/-</button>
@@ -44,5 +45,6 @@ function CalculatorButtons() {
     </div>
   );
 }
+
 
 export default Calculator;
