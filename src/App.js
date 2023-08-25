@@ -11,18 +11,20 @@ export default function App() {
   return (
     <Router>
       <div className="App">
-        <header>
+        <header className="header">
           <h1>Math Magicians</h1>
           <nav>
-            <ul>
+            <ul className="nav-list">
               <li>
-                <Link to="/">Home</Link>
+                <Link className="nav-text" to="/">Home</Link>
               </li>
+              <li>|</li>
               <li>
-                <Link to="/calculator">Calculator</Link>
+                <Link className="nav-text" to="/calculator">Calculator</Link>
               </li>
+              <li>|</li>
               <li>
-                <Link to="/quote">Quote</Link>
+                <Link className="nav-text" to="/quote">Quote</Link>
               </li>
             </ul>
           </nav>
