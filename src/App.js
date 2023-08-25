@@ -1,5 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import {
+  BrowserRouter as Router, Route, Routes, Link,
+} from 'react-router-dom';
 import Calculator from './components/Calculator';
 import Home from './components/home';
 import Quote from './components/Quote';
@@ -31,6 +33,6 @@ export default function App() {
           <Route path="/quote" element={<Quote />} />
         </Routes>
       </div>
-    </Router>      
+    </Router>
   );
 }

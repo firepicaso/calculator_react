@@ -1,9 +1,9 @@
-import Quote from "./Quote";
+import Quote from './Quote';
 
 export default function QuotePage() {
-    retrun (
-        <div className="quote-container">
-            <Quote />
-        </div>
-    )
-};
+  return (
+    <div className="quote-container">
+      <Quote />
+    </div>
+  );
+}

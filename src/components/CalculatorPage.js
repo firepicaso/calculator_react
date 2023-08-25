@@ -1,9 +1,9 @@
-import Calculator from "./Calculator";
+import Calculator from './Calculator';
 
 export default function CalculatorPage() {
-    return (
-        <div>
-            <calculator />
-        </div>
-    )
-};
+  return (
+    <div>
+      <Calculator />
+    </div>
+  );
+}
