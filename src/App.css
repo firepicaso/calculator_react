@@ -3,37 +3,64 @@ body {
   min-height: 100vh;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.nav-list {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+.nav-text {
+  color: rgb(20, 97, 197);
+}
+
+.homepage {
+  margin: 2rem;
+}
+
 .app-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 2rem;
 }
 
 .quote-container {
   display: flex;
-  flex-direction: column;
-  margin: 5rem 3rem;
-  width: 20rem;
+  justify-content: center;
 }
 
-.quote-container p {
-  font-style: italic;
+.quote {
+  margin: 2rem;
 }
 
 h1 {
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(64, 111, 154);
+  color: rgb(58, 58, 58);
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(58, 58, 58);
 }
 
 h4 {
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(58, 58, 58);
-  text-align: right;
+  color: rgb(172, 133, 8);
 }
 
 .calculator {
   display: grid;
   max-width: 300px;
-  margin: 5rem 1rem;
+  margin-right: 2rem;
 }
 
 .button-row {

@@ -44,8 +44,8 @@ function Quote() {
   }
 
   return (
-    <div>
-      <h1>Knowledge Quote of the Moment</h1>
+    <div className="quote">
+      <h2>Knowledge Quote of the Moment</h2>
       <p>{quote.quote}</p>
       <h4>
         ~
