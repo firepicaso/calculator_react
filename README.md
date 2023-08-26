@@ -67,7 +67,7 @@ We are using HTML, CSS, Javascript and React in this project.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Underconstruction
+[Render](https://mm-calculator.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
