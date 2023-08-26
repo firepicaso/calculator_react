@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Home component 1`] = `
+<div
+  class="homepage"
+>
+  <h2>
+    Welcome to our page!
+  </h2>
+  <div
+    class="welcome"
+  >
+    <p>
+      Welcome to our innovative calculator app that is about sparking your curiosity
+    </p>
+    <p>
+      Our calculator is your reliable companion on your mathematical journey.
+    </p>
+    <p>
+      You will find that math is an adventure waiting to be explored.
+    </p>
+  </div>
+</div>
+`;
