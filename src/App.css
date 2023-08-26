@@ -1,0 +1,95 @@
+body {
+  background-color: hsl(0, 0%, 93%);
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.nav-list {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+.nav-text {
+  color: rgb(20, 97, 197);
+}
+
+.homepage {
+  margin: 2rem;
+}
+
+.app-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.quote-container {
+  display: flex;
+  justify-content: center;
+}
+
+.quote {
+  margin: 2rem;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(58, 58, 58);
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(58, 58, 58);
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(172, 133, 8);
+}
+
+.calculator {
+  display: grid;
+  max-width: 300px;
+  margin-right: 2rem;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-row :last-child {
+  background-color: rgb(253, 155, 36);
+}
+
+button {
+  width: 100%;
+  border: 1px solid rgb(195, 195, 195);
+  font-size: 18px;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: #8f8f8f;
+  font-size: 22px;
+  padding: 0.5rem 0.5rem;
+  color: white;
+}
+
+.narrow {
+  width: 140px;
+}

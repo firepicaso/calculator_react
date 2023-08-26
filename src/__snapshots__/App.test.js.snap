@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Apppage component 1`] = `
+<div
+  class="App"
+>
+  <header
+    class="header"
+  >
+    <h1>
+      Math Magicians
+    </h1>
+    <nav>
+      <ul
+        class="nav-list"
+      >
+        <li>
+          <a
+            class="nav-text"
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          |
+        </li>
+        <li>
+          <a
+            class="nav-text"
+            href="/calculator"
+          >
+            Calculator
+          </a>
+        </li>
+        <li>
+          |
+        </li>
+        <li>
+          <a
+            class="nav-text"
+            href="/quote"
+          >
+            Quote
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div
+    class="homepage"
+  >
+    <h2>
+      Welcome to our page!
+    </h2>
+    <div
+      class="welcome"
+    >
+      <p>
+        Welcome to our innovative calculator app that is about sparking your curiosity
+      </p>
+      <p>
+        Our calculator is your reliable companion on your mathematical journey.
+      </p>
+      <p>
+        You will find that math is an adventure waiting to be explored.
+      </p>
+    </div>
+  </div>
+</div>
+`;
