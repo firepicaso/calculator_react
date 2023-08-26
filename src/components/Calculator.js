@@ -12,10 +12,10 @@ function Calculator() {
   };
 
   return (
-    <div className="app-container">
+    <div className="app-container" data-testid="calculator-component">
       <h2>Let&apos;s do some math!</h2>
       <div className="calculator">
-        <div className="display">{calculation.next || calculation.total || '0'}</div>
+        <div className="display" data-testid="display">{calculation.next || calculation.total || '0'}</div>
         <div className="button-row">
           <CalculatorButtons label="AC" onClick={() => clickButtons('AC')} />
           <CalculatorButtons label="+/-" onClick={() => clickButtons('+/-')} />

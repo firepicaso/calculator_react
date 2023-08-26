@@ -4,6 +4,7 @@ exports[`testing CalculatorPage component 1`] = `
 <div>
   <div
     class="app-container"
+    data-testid="calculator-component"
   >
     <h2>
       Let's do some math!
@@ -13,6 +14,7 @@ exports[`testing CalculatorPage component 1`] = `
     >
       <div
         class="display"
+        data-testid="display"
       >
         0
       </div>
