@@ -1,4 +1,4 @@
-import calculate from "./calculate";
+import calculate from './calculate';
 
 describe('testing calculate logic function', () => {
   it('1 + 2 = 3 ', () => {

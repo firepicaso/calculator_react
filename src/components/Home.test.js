@@ -1,7 +1,7 @@
-import { render } from "@testing-library/react";
-import Home from "./Home";
+import { render } from '@testing-library/react';
+import Home from './Home';
 
 test('testing Home component', () => {
-    const { container } = render(<Home />);
-    expect(container.firstChild).toMatchSnapshot();
+  const { container } = render(<Home />);
+  expect(container.firstChild).toMatchSnapshot();
 });
